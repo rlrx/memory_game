@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	background-image: url("./assets/pokemonBackground.jpg");
+}
+
+body {
+	margin: 0;
+	display: flex;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+header {
+	font-family: "Pokemon Solid", sans-serif;
+	font-size: larger;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.title {
+	color: rgb(253, 253, 16);
+	text-shadow: -1px -1px 0 blue, 1px -1px 0 blue, -1px 1px 0 blue,
+		1px 1px 0 blue, -2px -2px 0 blue, 2px -2px 0 blue, -2px 2px 0 blue,
+		2px 2px 0 blue, -3px -3px 1px blue, 3px -3px 1px blue, -3px 3px 1px blue,
+		3px 3px 1px blue;
+	display: flex;
+	justify-content: center;
+	background-color: #335fe5;
+	font-size: 60px;
+	border-radius: 10px; /* Slight rounding for a classy touch */
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sophisticated shadow */
+	padding: 3px;
+	opacity: 90%;
+}
+
+.instructions {
+	background-color: rgb(52, 49, 49);
+	opacity: 95%;
+	padding: 3px;
+	border-radius: 10px;
+}
+
+.score-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.score,
+.best-score {
+	color: rgb(253, 253, 16);
+	text-shadow: -1px -1px 0 blue, 1px -1px 0 blue, -1px 1px 0 blue,
+		1px 1px 0 blue, -2px -2px 0 blue, 2px -2px 0 blue, -2px 2px 0 blue,
+		2px 2px 0 blue, -3px -3px 1px blue, 3px -3px 1px blue, -3px 3px 1px blue,
+		3px 3px 1px blue;
+	background-color: #335fe5;
+	border-radius: 10px;
+	padding: 3px;
+}
+
+.card-container {
+	display: flex;
+	gap: 1.2em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 25px;
+}
+
+.card {
+	padding: 2rem;
+	font-family: "Pokemon Solid", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+
+button {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 100;
+	font-family: inherit;
+	color: #ffffff;
+	background-color: #0a6b31;
+	border: 4px solid #4fc576;
+	opacity: 0.8;
+	cursor: pointer;
+	transition: border-color 0.25s;
+	width: 25%;
+	height: 5%;
+}
+button:hover {
+	border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
